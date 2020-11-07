@@ -1,8 +1,12 @@
 body{
     font-family: "Open Sans", sans-serif;
 }
-h1,h2,h3{
-    font-family: "Lobster Two", cursive;
+h1,h2{
+    font-family: "Sacramento", cursive;
+}
+
+h3{
+    font-family: "Press Start 2P", cursive;
 }
 
 h2{
@@ -10,12 +14,17 @@ h2{
 }
 
 header h2{
-    color: violet;
+    color: Blue;
+}
+header h1{
+    font-family: "Lobster Two", cursive;
 }
 
 footer{
-    background-image: linear-gradient(magenta,white);
+    background-image: linear-gradient(white, cyan, magenta 10%,white);
     padding: 20px 0;
+    /* font-family: "Press Start 2P", cursive; */
+   
 }
 
 .jumbotron-fluid{
@@ -25,6 +34,7 @@ footer{
 
 .row-content{
     padding: 50px 0;
-    border-bottom: 1px ridge;
+    border-bottom: 1px ridge  cyan;
     min-height: 200px;
-}
+    
+} 
