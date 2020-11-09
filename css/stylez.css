@@ -1,0 +1,48 @@
+body{
+    font-family: "Open Sans", sans-serif;
+}
+h1,h2{
+    font-family: "Sacramento", cursive;
+}
+
+h3{
+    font-family: "Press Start 2P", cursive;
+}
+
+h2{
+    color: cyan;
+}
+
+header h2{
+    color: Blue;
+}
+header h1{
+    font-family: "Lobster Two", cursive;
+}
+
+footer{
+    background-image: linear-gradient(white, cyan, magenta 10%,white);
+    padding: 20px 0;
+    /* font-family: "Press Start 2P", cursive; */
+   
+}
+
+.jumbotron-fluid{
+    padding: 30px;
+    background-image: linear-gradient(to right, lime,yellow,orange, purple);
+}
+
+.row-content{
+    padding: 50px 0;
+    border-bottom: 1px ridge  cyan;
+    min-height: 200px;
+    
+} 
+
+.navbar{
+    background-color: thistle;
+}
+
+.jumbotron{
+    margin: 0;
+}
