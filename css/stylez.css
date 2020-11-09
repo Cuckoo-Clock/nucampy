@@ -30,6 +30,7 @@ footer{
 .jumbotron-fluid{
     padding: 30px;
     background-image: linear-gradient(to right, lime,yellow,orange, purple);
+    margin: 0;
 }
 
 .row-content{
