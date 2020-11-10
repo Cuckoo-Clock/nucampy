@@ -20,12 +20,17 @@ header h1{
     font-family: "Lobster Two", cursive;
 }
 
-footer{
+.site-footer{
+    background-image: linear-gradient(#CEC8FF, white);
+    padding: 20px 0;
+}
+
+/* footer{
     background-image: linear-gradient(white, cyan, magenta 10%,white);
     padding: 20px 0;
-    /* font-family: "Press Start 2P", cursive; */
+
    
-}
+}  */
 
 .jumbotron-fluid{
     padding: 30px;
