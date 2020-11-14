@@ -1,40 +1,38 @@
 body{
     font-family: "Open Sans", sans-serif;
 }
-h1,h2{
-    font-family: "Sacramento", cursive;
-}
 
-h3{
-    font-family: "Press Start 2P", cursive;
+h1, h2, h3 {
+    font-family: "Lobster", cursive;
 }
 
 h2{
-    color: cyan;
+    color: #3046C5;
 }
 
 header h2{
-    color: Blue;
+    color: #CEC8FF;
 }
 header h1{
-    font-family: "Lobster Two", cursive;
+    font-family: "Lobster", cursive;
 }
 
-footer{
-    background-image: linear-gradient(white, cyan, magenta 10%,white);
+footer {
+    background-image: linear-gradient(#CEC8FF, white);
     padding: 20px 0;
-    /* font-family: "Press Start 2P", cursive; */
-   
 }
+
+
 
 .jumbotron-fluid{
     padding: 30px;
-    background-image: linear-gradient(to right, lime,yellow,orange, purple);
+    background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
+    color: white;
 }
 
 .row-content{
     padding: 50px 0;
-    border-bottom: 1px ridge  cyan;
+    border-bottom: 1px ridge;
     min-height: 200px;
     
 } 
