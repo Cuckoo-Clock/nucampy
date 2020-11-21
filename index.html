@@ -31,8 +31,19 @@
                     <h2>a better way to camp </h2>
                 </div>
                 <div class="col-md-4 col-xl-2 mt-4">
-                    <a href="#reserveForm" role="button" class="btn text-nowrap btn-lg bg-info text-white" data-toggle="tooltip" data-html="true" data-placement="bottom" title="Or call us at <br /> <strong>1.123.581.3213</strong>">Reserve Campsite</a>
+                    <div class="row">
+                    <!-- nest a row? -->
+                        <a href="#reserveForm" role="button" class="btn text-nowrap btn-lg bg-info text-white" data-toggle="tooltip" data-html="true" data-placement="bottom" title="Or call us at <br /> <strong>1.123.581.3213</strong>">Reserve Campsite</a>
+                
+<!-- where to put the login? -->
+            
+            
+                        <a role="button" class="ml-2 btn text-nowrap btn-lg bg-info text-white" data-toggle="modal" data-target="#loginModal">Login</a>
+                    </div>
                 </div>
+            </div>
+
+
             </div>
         </div>
     </header>
@@ -49,6 +60,7 @@
                         </button>
                         <!-- make some svgz -->
                         <div class="collapse navbar-collapse" id="nucampNavbar">
+                            <!-- explore nav-tabs -->
                             <ul class="navbar-nav">
 
                                 <li class="nav-item active mr-1"> <img src="img/logo.png" class="img-fluid" alt="nu-camp logo" height="30" width="30" style="margin: 1px;"/> </a></li>
@@ -64,13 +76,6 @@
                     </div> 
                 </nav>
 
-<!-- where to put the login? -->
-
-                <span class="navbar-text ml-auto">
-                    <a role="button" data-toggle="modal" data-target="#loginModal">
-                        <i class="fa-sign-in"></i> Login
-                    </a>
-                </span>
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -116,56 +121,83 @@
 
 
         <!-- accordian -->
-        
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4 order-sm-last col-md-3">
-                <h2 class="text-sm-right">Discover & Review </h2>
-            </div>
-            <div class="col">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg" alt="Breadcrumb Trail Thumb">
-                    <div class="media-body align-self-center">
-                        <h3>Our Campsites </h3>
-                        <p class="d-none d-sm-block ">Explore out growing database of curated campsites and leave your own reviews! </p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="row row-content align-items-center">
-                <div class="col-sm-4 col-md-3">
-                    <h2>Featured Campsites</h2>
-                </div>
-                <div class="col">
-                    <div class="media">
-                        <div class="media-body align-self-center">
-                            <h3>React Lake Campground</h3>
-                            <p class="d-none d-sm-block ">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a gavorite for fly fishers</p>
+      
+            
+
+
+        <div class="row ml-5 mt-5">
+            
+            <div class="col">
+
+                <div id="accordian">
+                    <div class="card">
+                        <div role="tab" class="card-header">    
+                            <h2>
+                            <a class="card-link" data-toggle="collapse" data-target="#discover">Discover & Review</a>
+                            </h2>
                         </div>
-                        <img class="d-flext ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="React Lake">
+                            <div class="collapse show" id="discover" data-parent="#accordian">
+                                <div class="card-body">
+                                    <div class="media">
+                                        <img class="d-flex mr-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg" alt="Breadcrumb Trail Thumb">
+                                        <div class="media-body align-self-center">
+                                            <h3>Our Campsites </h3>
+                                            <p class="d-none d-sm-block ">Explore out growing database of curated campsites and leave your own reviews! </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                    </div>
+                    <div class="card">
+                        <div role="tab" class="card-header">    
+                            <h2>
+                            <a class="card-link" data-toggle="collapse" data-target="#featured">Featured Campsites</a>
+                            </h2>
+                        </div>
+                        <!-- having data-parent leaves only one tab open -->
+                            <div class="collapse" id="featured" data-parent="#accordian">
+                                <div class="card-body">
+                                    <div class="media">
+                                        <img class="d-flex mr-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="Breadcrumb Trail Thumb">
+                                        <div class="media-body align-self-center">
+                                            <h3>React Lake Campground</h3>
+                                            <p class="d-none d-sm-block ">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a gavorite for fly fishers</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div role="tab" class="card-header">    
+                            <h2>
+                            <a class="card-link" data-toggle="collapse" data-target="#partners">Our Community Partners</a>
+                            </h2>
+                        </div>
+                            <div class="collapse" id="partners" data-parent="#accordian">
+                                <div class="card-body">
+                                    <div class="media">
+                                        <img class="d-flex mr-3 img-thumbnail" src="img/bootstrap-thumb.png" alt="Breadcrumb Trail Thumb">
+                                        <div class="media-body align-self-center">
+                                            <h3>Bootstrap Outfitters </h3>
+                                <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-        </div>
+            </div>
 
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4 order-sm-last col-md-3">
-                <h2 class="text-sm-right">Our Community Partners </h2>
-            </div>
-            <div class="col">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters">
-                    <div class="media-body align-self-center">
-                        <h3>Bootstrap Outfitters </h3>
-                        <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
-                    </div>
-                </div>
-            </div>
         </div>
         <div class="row row-content align-items-center">
-            <div class="col-sm-6 mx-auto">
+            <div class="col-sm-4 mx-auto">
                 <div class="card">
-                    <div class="card-header bg-info text-white">
-                        <h3>Reserve a Campsite</h3>
+                    <div class="card-header bg-info text-white text-center">
+                        <h1>Reserve a Campsite</h1>
                     </div>
                     <div class="card-body">
                         
@@ -208,8 +240,9 @@
             </div>
         
        
-            <div class="d-none d-lg-block col-lg-6 mx-auto">
-                <div class="carousel slide" id="homeCarousel" data-ride="carousel" >
+            <div class="d-none d-md-block col-md-6 mx-auto">
+                <!-- data-interval sets the slide speed -->
+                <div class="carousel slide" id="homeCarousel" data-ride="carousel" data-interval="5000" >
                     <ol class="carousel-indicators">
                         <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#homeCarousel" data-slide-to="1"></li>
@@ -254,12 +287,6 @@
                     </a>
                 </div>
             </div>
-
-      
-
-
-
-
         </div>
     </div>
 
