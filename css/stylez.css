@@ -1,23 +1,30 @@
 body{
     font-family: "Open Sans", sans-serif;
 }
-h1,h2{
+h1,h2,h3{
     font-family: "Sacramento", cursive;
 }
 
-h3{
+/* h3{
     font-family: "Press Start 2P", cursive;
+} */
+
+h2,h3{
+    color: white;
 }
 
-h2{
-    color: cyan;
+body{
+    background: linear-gradient(white 10%, magenta 70%,cyan, darkblue);
 }
-
 header h2{
     color: Blue;
 }
 header h1{
     font-family: "Lobster Two", cursive;
+    background: linear-gradient(cyan, blueviolet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+      
 }
 
 .site-footer{
@@ -62,3 +69,9 @@ header h1{
     border: solid #5637DD;
 }
 
+.crumbs{
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+
+
+}
