@@ -52,10 +52,6 @@ header h1{
     
 } 
 
-.navbar{
-    background-color: thistle;
-}
-
 .jumbotron{
     margin: 0;
 }
@@ -72,6 +68,7 @@ header h1{
 .crumbs{
     writing-mode: vertical-rl;
     text-orientation: sideways;
-
+    position: fixed;
+    /* background-image: linear-gradient(to bottom, magenta,cyan); */
 
 }
