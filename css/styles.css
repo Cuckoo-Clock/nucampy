@@ -22,7 +22,9 @@ footer {
     padding: 20px 0;
 }
 
-
+.navbar{
+    background:blueviolet;
+}
 
 .jumbotron{
     padding: 30px;
