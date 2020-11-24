@@ -1,5 +1,5 @@
 
-document.querySelector("#date").valueAsDate = new Date();
+// document.querySelector("#date").valueAsDate = new Date();
 
 $(function() {
     $(".carousel").carousel( { interval: 2000 } );
